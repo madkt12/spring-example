@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "Current directory: $(pwd)"
 echo "Contents of current directory: $(ls -la)"
@@ -8,7 +8,7 @@ PROPERTIES_FILE="src/main/resources/jenkins_temp.properties"
 echo "Properties file path: $PROPERTIES_FILE"
 
 # Define the new value for the key, retrieved from Jenkins parameter
-NEW_VALUE="$messageFromJenkins"  # Use the environment variable set by Jenkins for the choice parameter
+NEW_VALUE="$messageFromJenkins"  # Use the environment variable set zby Jenkins for the choice parameter
 echo "New value: $NEW_VALUE"
 
 # Check if the properties file exists
