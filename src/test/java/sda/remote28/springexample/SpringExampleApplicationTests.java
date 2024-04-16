@@ -14,7 +14,7 @@ import org.springframework.test.context.TestPropertySource;
 @TestPropertySource(locations = "classpath:jenkins.properties")
 class SpringExampleApplicationTests {
 
-	@Value("#{'${messageFromJenkins:test.txt}'.split(',')}")
+	@Value("${messageFromJenkins}")
 	private List<String> message;
 
 	@BeforeEach
