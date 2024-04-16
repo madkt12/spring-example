@@ -13,7 +13,7 @@ public class MyClass {
     public static Stream<String> fetchFilesAsList(List<String> fileNames) throws IOException {
         Stream<String> fileStream = Stream.empty();
         for (String fileName : fileNames) {
-            final String filePath = "./blog-url/" + fileName;
+            final String filePath = "/blog-url/" + fileName;
             final URL resource = MyClass.class.getClassLoader()
                 .getResource(filePath);
             if (resource == null) {
