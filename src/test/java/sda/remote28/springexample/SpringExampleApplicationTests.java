@@ -19,7 +19,6 @@ class SpringExampleApplicationTests {
 
 	@BeforeEach
 	public void setup() throws IOException {
-		// append all URLs
 		final Stream<String> urlStream = MyClass.fetchFilesAsList(message);
 	}
 
